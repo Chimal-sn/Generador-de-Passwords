@@ -8,7 +8,7 @@
 body {
     width: 100dvw;
     height: 100dvh;
-    background-color: #dadfc9;
+    background-color: #686868;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,6 +19,8 @@ main {
     display: flex;
     flex-direction: column;
     gap: 15px;
+
+    color: #fff;
 }
 
 .password {
@@ -33,7 +35,7 @@ main {
     padding: 15px;
     background-color: #8c8f81;
 
-    color: #21221e;
+    color: #ffffff;
 
     form {
         display: flex;
@@ -47,6 +49,7 @@ main {
         border: none;
         background-color: #f1ffc9;
         padding: 10px;
+        cursor: pointer;
     }
 }
 
