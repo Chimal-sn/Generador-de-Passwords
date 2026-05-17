@@ -5,18 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Generador de passwords</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
 </head>
 
 <body>
 
     <main>
         Generador de contraseñas
-        <section>
+        <section class="password">
 
         </section>
         <section class="formulario">
             <form action="">
                 <p>Cantidad de caracteres</p>
+                <input type="range" name="" id="">
                 <div class="selecctionar">
                     <input type="checkbox" name="mayuscula">
                     <label for="mayuscula">Incluye letras mayusculas</label>
@@ -32,6 +35,22 @@
                 <div class="selecctionar">
                     <input type="checkbox" name="simbolos">
                     <label for="simbolos">Incluye simbolos</label>
+                </div>
+                <div class="segura">
+                    <div class="segura_izquierda">
+                        <p>SEGURA</p>
+                    </div>
+                    <div class="segura_derecha">
+                        <p>MEDIUM</p>
+                        <div class="fuerza">
+                        </div>
+                        <div class="fuerza">
+                        </div>
+                        <div class="fuerza">
+                        </div>
+                        <div class="fuerza">
+                        </div>
+                    </div>
                 </div>
                 <button>Generar</button>
             </form>
