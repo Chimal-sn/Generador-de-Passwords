@@ -12,28 +12,29 @@
 <body>
 
     <main>
-        Generador de contraseñas
-        <section class="password">
+        <p>Generador de contraseñas</p>
+        <section class="password" id="password">
 
         </section>
         <section class="formulario">
             <form action="">
-                <p>Cantidad de caracteres</p>
-                <input type="range" name="" id="">
+                <p>Cantidad de caracteres: <span id="longitudTexto">8</span></p>
+                <input type="range" id="rango" min="4" max="32" value="8"
+                    oninput="document.getElementById('longitudTexto').innerText = this.value">
                 <div class="selecctionar">
-                    <input type="checkbox" name="mayuscula">
+                    <input type="checkbox" name="mayuscula" id="mayuscula">
                     <label for="mayuscula">Incluye letras mayusculas</label>
                 </div>
                 <div class="selecctionar">
-                    <input type="checkbox" name="minusculas">
+                    <input type="checkbox" name="minusculas" id="minusculas">
                     <label for="minusculas">Incluye letras minusculas</label>
                 </div>
                 <div class="selecctionar">
-                    <input type="checkbox" name="numeros">
+                    <input type="checkbox" name="numeros" id="numeros">
                     <label for="numeros">Incluye numeros</label>
                 </div>
                 <div class="selecctionar">
-                    <input type="checkbox" name="simbolos">
+                    <input type="checkbox" name="simbolos" id="simbolos">
                     <label for="simbolos">Incluye simbolos</label>
                 </div>
                 <div class="segura">
@@ -41,24 +42,21 @@
                         <p>SEGURA</p>
                     </div>
                     <div class="segura_derecha">
-                        <p>MEDIUM</p>
-                        <div class="fuerza">
+                        <p id="segura">MEDIUM</p>
+                        <div class="fuerza" id="fuerza1">
                         </div>
-                        <div class="fuerza">
+                        <div class="fuerza" id="fuerza2">
                         </div>
-                        <div class="fuerza">
+                        <div class="fuerza" id=fuerza3>
                         </div>
-                        <div class="fuerza">
+                        <div class="fuerza" id=fuerza4>
                         </div>
                     </div>
                 </div>
-                <button>Generar</button>
+                <button type="button" onclick="generarPassword()">Generar</button>
             </form>
-
         </section>
-
     </main>
-
 </body>
 
 </html>

@@ -21,6 +21,12 @@ main {
     gap: 15px;
 
     color: #fff;
+
+
+    p:first-child {
+        text-align: center;
+        font-size: 1rem;
+    }
 }
 
 .password {
@@ -84,4 +90,8 @@ main {
     border: 1px solid #f1ffc9;
     height: 100%;
     width: 8px;
+}
+
+.fuerza.activa {
+    background-color: #f1ffc9;
 }
